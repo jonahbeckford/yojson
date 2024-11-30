@@ -19,7 +19,7 @@ yojson package.")
   (depends
     (ocaml (>= 4.02.3))
     (alcotest (and :with-test (>= 0.8.5)))
-    (seq (>= 0.2.2))))
+    (seq (or (= base) (>= 0.2.2)))))
 
 (package
   (name yojson-five)
